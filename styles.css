@@ -2,8 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 body{
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainSection{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;;
+}
+.col1, .col3{
+    height: 80%;
+    width: 30%;
+    justify-content: space-around;
+}
+.col2{
+    width: 40%;
+    height: 100%;
+}
+.edge{
+    height: 25%;
+}
+.center{
+    height: 50%;
+}
+.edge, .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.center .circle{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
