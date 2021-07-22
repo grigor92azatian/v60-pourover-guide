@@ -1,0 +1,1 @@
+-"Random" button: clicking this will spin the outer circles around the center circle and land on a random selection which will then open that guide
