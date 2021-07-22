@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid black; */
 }
-
 body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Lobster", cursive;
 }
 .mainSection{
     width: 800px;
@@ -49,6 +50,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
 .center .circle{
     background-color: lightpink;
