@@ -12,8 +12,8 @@ body{
     font-family: "Lobster", cursive;
 }
 .mainSection{
-    width: 800px;
-    height: 800px;
+    width: 900px;
+    height: 900px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,12 +24,15 @@ body{
 }
 .col1, .col3{
     height: 80%;
-    width: 30%;
+    width: 33.33%;
     justify-content: space-around;
+    align-items: center;
 }
 .col2{
-    width: 40%;
+    width: 33.33%;
     height: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 .edge{
     height: 25%;
