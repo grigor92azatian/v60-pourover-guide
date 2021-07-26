@@ -4,3 +4,18 @@
 function expandIcon(){
     
 }
+
+
+let outerIcons = [];
+for(let i=1;i<=6;i++){
+    outerIcons.push(document.querySelector(".icon"+i));
+}
+
+outerIcons.forEach(eachCircle => {
+    eachCircle.addEventListener("mouseover", function(){
+        eachCircle.style.backgroundColor = "lightpink";
+    });
+    eachCircle.addEventListener("mouseout", function(){
+        eachCircle.style.backgroundColor = "lightblue";
+    })
+});
