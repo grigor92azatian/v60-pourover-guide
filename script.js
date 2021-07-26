@@ -2,9 +2,13 @@
 //about brew method in question
 
 function expandIcon(){
-    
+    let centerCircle = document.querySelector(".centerIcon");
+    centerCircle.innerHTML = this.innerHTML;
 }
-
+function retractIcon(){
+    let centerCircle = document.querySelector(".centerIcon");
+    centerCircle.innerHTML = '<img src="graphics/v60-logo.png" alt="v60Logo" width="250">';
+}
 
 let outerIcons = [];
 for(let i=1;i<=6;i++){
@@ -12,10 +16,7 @@ for(let i=1;i<=6;i++){
 }
 
 outerIcons.forEach(eachCircle => {
-    eachCircle.addEventListener("mouseover", function(){
-        eachCircle.style.backgroundColor = "lightpink";
-    });
-    eachCircle.addEventListener("mouseout", function(){
-        eachCircle.style.backgroundColor = "lightblue";
-    })
+    eachCircle.addEventListener("mouseover", expandIcon);
+    eachCircle.addEventListener("mouseout", retractIcon);
 });
+
