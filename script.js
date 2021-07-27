@@ -3,7 +3,26 @@
 
 function expandIcon(){
     let centerCircle = document.querySelector(".centerIcon");
-    centerCircle.innerHTML = this.innerHTML;
+    let brewMethodInfo;
+    if(this.innerHTML === "CAFEC"){
+        brewMethodInfo = "The osmotic flow method.";
+    }
+    if(this.innerHTML === "April Coffee"){
+        brewMethodInfo = "Let's see how April Coffee brews with the v60!";
+    }
+    if(this.innerHTML === "Tetsu Kasuya"){
+        brewMethodInfo = "The 4:6 method.";
+    }
+    if(this.innerHTML === "Onyx Coffee"){
+        brewMethodInfo = "This is how Onyx Coffee does it!";
+    }
+    if(this.innerHTML === "Scott Rao"){
+        brewMethodInfo = "Scott Rao's personal v60 technique.";
+    }
+    if(this.innerHTML === "James Hoffman"){
+        brewMethodInfo = "The ultimate v60 method by the one and only James Hoffman.";
+    }
+    centerCircle.innerHTML = brewMethodInfo;
 }
 function retractIcon(){
     let centerCircle = document.querySelector(".centerIcon");
